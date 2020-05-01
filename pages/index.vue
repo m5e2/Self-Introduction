@@ -2,11 +2,11 @@
   <v-container>
     <v-row>
       <v-col class="text-center" cols="12">
-        <v-card
-          ><h1>Profile</h1>
+        <v-card class="profile">
+          <h1>Profile</h1>
           <p>
-            はじめまして。IT業界歴約5年、フロントエンドエンジニア2年目の m5e2
-            と申します。
+            はじめまして。IT業界歴約 5 年、フロントエンドエンジニア 2 年目の
+            m5e2 と申します。
           </p>
           <p>
             新卒時代は物流業界、その後転職し中小企業のSES企業に入社しました。
@@ -26,15 +26,12 @@
         </v-card></v-col
       >
       <v-col class="text-center" cols="12">
-        <v-card>
+        <v-card class="skill">
           <h1>Skill</h1>
           <p>簡易的なアプリの作成ができます。</p>
           <p>
             また、Vue.js や Typescript
-            は業務で使用しているので基本的な構文が分かります。
-          </p>
-          <p>
-            このポートフォリオは Nuxt.js で作られています。
+            は現在の業務で使用しているので基本的な構文を書くことができます。
           </p>
           <v-container>
             <v-row>
@@ -90,15 +87,24 @@
                 <h3>Github</h3>
                 <p>経験年数：2 年 3 ヶ 月</p>
               </v-col>
+              <v-col cols="4">
+                <h3>使ったことのある</h3>
+                <h3>CSS フレームワーク</h3>
+                <p>Bootstrap, Vuetify.js, bulma</p>
+              </v-col>
             </v-row>
           </v-container>
         </v-card>
       </v-col>
       <v-col class="text-center" cols="12">
-        <v-card>
+        <v-card class="work">
           <h1>Works</h1>
           <v-container>
             <v-row>
+              <v-col cols="4">
+                <h3>ポートフォリオ</h3>
+                <a href="https://github.com/m5e2/Self-Introduction">Github</a>
+              </v-col>
               <v-col cols="4">
                 <h3>イベント時の出欠者登録アプリ</h3>
                 <a href="https://github.com/m5e/Acceptance-confirmation"
@@ -107,15 +113,14 @@
               </v-col>
               <v-col cols="4">
                 <h3>ルーレット</h3>
-                <a
-                  href="https://m5e.github.io/Practice-Roulette-Machine/roulette.html"
+                <a href="https://github.com/m5e/Practice-Roulette-Machine"
                   >Github</a
                 >
               </v-col>
               <v-col cols="4">
                 <h3>定期外交通費申請アプリ</h3>
                 <h4>( 製作途中 )</h4>
-                <a href="https://m5e.github.io/transportation-expenses/"
+                <a href="https://github.com/m5e/transportation-expenses"
                   >Github</a
                 >
               </v-col>
@@ -132,3 +137,11 @@ export default {
   components: {},
 };
 </script>
+<style scoped>
+.profile,
+.skill,
+.work {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+</style>
