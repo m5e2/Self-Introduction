@@ -60,19 +60,19 @@ export default {
       items: [
         {
           icon: "mdi-apps",
-          title: "Welcome",
+          title: "HOME",
           to: "/",
         },
         {
           icon: "mdi-chart-bubble",
-          title: "Inspire",
-          to: "/inspire",
+          title: "このサイトについて",
+          to: "/SiteIntroduction",
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "m5e2's Portfolio",
+      title: "Hello World",
     };
   },
 };

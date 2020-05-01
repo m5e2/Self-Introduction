@@ -1,34 +1,26 @@
 <template>
   <v-container>
     <v-row>
+      <div class="image-container display-2">
+        <img class="image" src="../images/top-image.jpg" />
+        <p class="font-italic font-weight-bold">m5e2's Portfolio</p>
+      </div>
       <v-col class="text-center" cols="12">
         <v-card class="profile">
-          <h1>Profile</h1>
-          <p>
-            はじめまして。IT業界歴約 5 年、フロントエンドエンジニア 2 年目の
-            m5e2 と申します。
-          </p>
-          <p>
-            新卒時代は物流業界、その後転職し中小企業のSES企業に入社しました。
-          </p>
-          <p>
-            転職後は大手企業向けのパッケージ会社で品質保証のテストを行ったり、
-          </p>
-          <p>
-            現在の業務であるローコードな画面開発システムの開発支援を行っています。
-          </p>
-          <p>
-            現場先での開発支援業務に加え、プライベートでのプログラミングを行っていくうちに、
-          </p>
-          <p>
-            もっと開発業務に携わりたいという気持ちが強くなり、転職を意識するようになりました。
-          </p>
-        </v-card></v-col
-      >
+          <h1 class="font-italic font-weight-bold">Profile</h1>
+          <v-list shaped>
+            <v-list-item v-for="(list, i) in profileList" :key="i">
+              <v-list-item-content>
+                <v-list-item-title v-text="list.value"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-col>
       <v-col class="text-center" cols="12">
         <v-card class="skill">
-          <h1>Skill</h1>
-          <p>簡易的なアプリの作成ができます。</p>
+          <h1 class="font-italic font-weight-bold">Skill</h1>
+          <!-- <p>簡易的なアプリの作成ができます。</p>
           <p>
             また、Vue.js や Typescript
             は現在の業務で使用しているので基本的な構文を書くことができます。
@@ -93,12 +85,12 @@
                 <p>Bootstrap, Vuetify.js, bulma</p>
               </v-col>
             </v-row>
-          </v-container>
+          </v-container> -->
         </v-card>
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card class="work">
-          <h1>Works</h1>
+          <h1 class="font-italic font-weight-bold">Works</h1>
           <v-container>
             <v-row>
               <v-col cols="4">
@@ -135,9 +127,31 @@
 <script>
 export default {
   components: {},
+  data() {
+    return {
+      profileList: [
+        { value: "出身： 宮城県" },
+        { value: "IT 業界歴： 約 5 年" },
+        { value: "フロントエンドエンジニア歴： 2 年 3 か月" },
+      ],
+    };
+  },
 };
 </script>
 <style scoped>
+.image-container {
+  position: relative;
+}
+.image-container p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
 .profile,
 .skill,
 .work {
