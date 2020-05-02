@@ -7,7 +7,7 @@
       </div>
       <v-col class="text-center">
         <v-card class="profile">
-          <h1 class="font-italic font-weight-bold">Profile</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Profile</h1>
           <v-list shaped>
             <v-list-item v-for="(list, i) in profileLists" :key="i">
               <v-list-item-content>{{ list.value }}</v-list-item-content>
@@ -17,10 +17,10 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card class="skill">
-          <h1 class="font-italic font-weight-bold">Skill</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Skill</h1>
           <v-row cols="12">
-            <v-col class="text-center" cols="4">
-              <p class="text-left">{{ COLUM_LANG_TITLE }}</p>
+            <v-col class="text-center skill-content" cols="4">
+              <p class="text-center headline">{{ COLUM_LANG_TITLE }}</p>
               <p />
               <v-list shaped>
                 <v-list-item v-for="(lang, i) in Languages" :key="i">
@@ -28,8 +28,8 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col class="text-center" cols="4">
-              <p class="text-left">{{ COLUM_FW_LIB_TITLE }}</p>
+            <v-col class="text-center skill-content" cols="4">
+              <p class="text-center headline">{{ COLUM_FW_LIB_TITLE }}</p>
               <p />
               <v-list shaped>
                 <v-list-item v-for="(fw_lib, i) in framework_library" :key="i">
@@ -37,12 +37,21 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col class="text-center" cols="4">
-              <p class="text-left">{{ COLUM_TOOL_TITLE }}</p>
+            <v-col class="text-center skill-content" cols="4">
+              <p class="text-center headline">{{ COLUM_TOOL_TITLE }}</p>
               <p />
               <v-list shaped>
                 <v-list-item v-for="(other, i) in others" :key="i">
                   <v-list-item-content>{{ other.name }}</v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-col>
+            <v-col class="text-center skill-content" cols="4">
+              <p class="text-center headline">{{ COLUM_DB_TITLE }}</p>
+              <p />
+              <v-list shaped>
+                <v-list-item v-for="(d, i) in db" :key="i">
+                  <v-list-item-content>{{ d.name }}</v-list-item-content>
                 </v-list-item>
               </v-list>
             </v-col>
@@ -51,27 +60,27 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card class="work">
-          <h1 class="font-italic font-weight-bold">Works</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Works</h1>
           <v-row cols="12">
-            <v-col cols="4">
+            <v-col class="skill-content" cols="4">
               <v-list-item-content>
                 <h3>イベント時出席者登録アプリ</h3>
-                <h4>Java, Gradle, Tymeleaf, nginx</h4>
+                <v-card-subtitle>Java, Gradle, Tymeleaf, nginx</v-card-subtitle>
                 <a href="https://github.com/m5e/Acceptance-confirmation">Github</a>
               </v-list-item-content>
             </v-col>
-            <v-col cols="4">
+            <v-col class="skill-content" cols="4">
               <v-list-item-content>
                 <h3>ルーレット</h3>
-                <h4>Jquery</h4>
+                <v-card-subtitle>Jquery</v-card-subtitle>
                 <a href="https://github.com/m5e/Practice-Roulette-Machine">Github</a>
               </v-list-item-content>
             </v-col>
-            <v-col cols="4">
+            <v-col class="skill-content" cols="4">
               <v-list-item-content>
                 <h3>定期外交通費申請アプリ</h3>
                 <h3>( 製作途中 )</h3>
-                <h4>Nuxt.js, bulma</h4>
+                <v-card-subtitle>Nuxt.js, bulma</v-card-subtitle>
                 <a href="https://github.com/m5e/transportation-expenses">Github</a>
               </v-list-item-content>
             </v-col>
@@ -89,6 +98,7 @@ export default {
     return {
       COLUM_LANG_TITLE: "言語",
       COLUM_FW_LIB_TITLE: "フレームワークやライブラリ",
+      COLUM_DB_TITLE: "DB",
       COLUM_TOOL_TITLE: "その他 ( IDE やツールなど )",
       profileLists: [
         { value: "出身： 宮城県" },
@@ -116,6 +126,7 @@ export default {
         { name: "bulma" },
         { name: "SpringBoot" }
       ],
+      db: [{ name: "MySQL" }, { name: "PostgreSQL" }],
       others: [
         { name: "Eclipse" },
         { name: "VSCode" },
@@ -124,6 +135,7 @@ export default {
         { name: "trac" },
         { name: "TortoiseSVN" },
         { name: "jenkins" },
+        { name: "Apache" },
         { name: "AWS" }
       ]
     };
@@ -134,22 +146,39 @@ export default {
 .image-container {
   position: relative;
 }
+
 .image-container p {
   position: absolute;
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .image {
   width: 100%;
   height: 100%;
 }
+
 .profile,
 .skill,
 .work {
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
-.work {
+
+.colum-title {
+  padding-bottom: 2%;
+}
+
+.skill-content {
+  border: thick double;
+}
+
+.col-4 {
+  max-width: 32%;
+}
+
+.row {
+  padding-left: 4%;
 }
 </style>
