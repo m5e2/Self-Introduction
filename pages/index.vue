@@ -72,7 +72,7 @@
                 <h3>定期外交通費申請アプリ</h3>
                 <h3>( 製作途中 )</h3>
                 <h4>Nuxt.js, bulma</h4>
-                <a href="https://github.com/m5e/Acceptance-confirmation">Github</a>
+                <a href="https://github.com/m5e/transportation-expenses">Github</a>
               </v-list-item-content>
             </v-col>
           </v-row>
