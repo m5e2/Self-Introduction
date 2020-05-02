@@ -39,7 +39,7 @@
 export default {
   data() {
     return {
-      top: "/",
+      top: "https://m5e2.github.io/Self-Introduction/",
       clipped: false,
       drawer: false,
       fixed: false
