@@ -10,7 +10,7 @@
           <h1 class="colum-title font-italic font-weight-bold">Profile</h1>
           <v-list shaped>
             <v-list-item v-for="(list, i) in profileLists" :key="i">
-              <v-list-item-content>{{ list.value }}</v-list-item-content>
+              <v-list-item-content class="text-sm-left">{{ list.value }}</v-list-item-content>
             </v-list-item>
           </v-list>
         </v-card>
@@ -64,15 +64,22 @@
           <v-row cols="12">
             <v-col class="skill-content" cols="4">
               <v-list-item-content>
+                <h3>ポートフォリオ</h3>
+                <v-card-subtitle>Nuxt.js, Node.js, Vuetify.js</v-card-subtitle>
+                <a href="https://github.com/m5e2/Self-Introduction">Github</a>
+              </v-list-item-content>
+            </v-col>
+            <v-col class="skill-content" cols="4">
+              <v-list-item-content>
                 <h3>イベント時出席者登録アプリ</h3>
-                <v-card-subtitle>Java, Gradle, Tymeleaf, nginx</v-card-subtitle>
+                <v-card-subtitle>Java, Gradle, Thymeleaf, nginx</v-card-subtitle>
                 <a href="https://github.com/m5e/Acceptance-confirmation">Github</a>
               </v-list-item-content>
             </v-col>
             <v-col class="skill-content" cols="4">
               <v-list-item-content>
                 <h3>ルーレット</h3>
-                <v-card-subtitle>Jquery</v-card-subtitle>
+                <v-card-subtitle>jQuery</v-card-subtitle>
                 <a href="https://github.com/m5e/Practice-Roulette-Machine">Github</a>
               </v-list-item-content>
             </v-col>
@@ -80,7 +87,7 @@
               <v-list-item-content>
                 <h3>定期外交通費申請アプリ</h3>
                 <h3>( 製作途中 )</h3>
-                <v-card-subtitle>Nuxt.js, bulma</v-card-subtitle>
+                <v-card-subtitle>Nuxt.js, Node.js, bulma</v-card-subtitle>
                 <a href="https://github.com/m5e/transportation-expenses">Github</a>
               </v-list-item-content>
             </v-col>
@@ -126,14 +133,16 @@ export default {
         { name: "bulma" },
         { name: "SpringBoot" }
       ],
-      db: [{ name: "MySQL" }, { name: "PostgreSQL" }],
+      db: [{ name: "MySQL" }, { name: "PostgreSQL" }, { name: "Oracle" }],
       others: [
         { name: "Eclipse" },
         { name: "VSCode" },
         { name: "Github" },
+        { name: "SourceTree" },
+        { name: "TortoiseSVN" },
+        { name: "Thymeleaf" },
         { name: "Redmine" },
         { name: "trac" },
-        { name: "TortoiseSVN" },
         { name: "jenkins" },
         { name: "Apache" },
         { name: "AWS" }
