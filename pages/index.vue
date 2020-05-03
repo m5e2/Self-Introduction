@@ -26,20 +26,20 @@
           </h4>
           <v-row cols="12">
             <v-col cols="4">
-              <h4 class="content-para">要件定義 ～ 詳細設計</h4>
+              <h3 class="content-para">要件定義 ～ 詳細設計</h3>
               <p>
                 新規機能の追加や仕様変更の要件を任されたときには要件の洗い出しを行ったり、どの実装方法であれば要件を満たせるかを考えて仕様検討案の作成を行ったりしています。
               </p>
             </v-col>
             <v-col cols="4">
-              <h4 class="content-para">コーディング</h4>
+              <h3 class="content-para">コーディング</h3>
               <p>
                 主に Vue.js や Typescript , jQuery を使って実装を行っています。
               </p>
               <p>テストは jest を用いて行っています。</p>
             </v-col>
             <v-col cols="4">
-              <h4 class="content-para">結合テスト</h4>
+              <h3 class="content-para">結合テスト</h3>
               <p>
                 リリース 1
                 ヶ月前くらいから所属しているプロジェクトの結合テストを行っています。
@@ -227,7 +227,7 @@ export default {
 }
 
 .content-para {
-  padding-bottom: 4%;
+  padding-bottom: 7%;
 }
 
 .skill-content {
