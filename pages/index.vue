@@ -3,11 +3,11 @@
     <v-row>
       <div class="image-container display-2">
         <img class="image" src="../images/top-image.jpg" />
-        <p class="font-italic font-weight-bold">m5e2's Portfolio</p>
+        <p class="page-title font-italic font-weight-bold">m5e2's Portfolio</p>
       </div>
       <v-col class="text-center">
         <v-card id="profile" class="profile">
-          <h1 class="font-italic font-weight-bold">Profile</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Profile</h1>
           <h4 class="colum-title-ja font-italic font-weight-bold">自己紹介</h4>
           <v-list shaped>
             <v-list-item v-for="(list, i) in profileLists" :key="i">
@@ -20,7 +20,9 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card id="currentWork">
-          <h1 class="font-italic font-weight-bold">Current work content</h1>
+          <h1 class="colum-title font-italic font-weight-bold">
+            Current work content
+          </h1>
           <h4 class="colum-title-ja font-italic font-weight-bold">
             現在の仕事内容
           </h4>
@@ -53,7 +55,7 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card id="skill" class="skill">
-          <h1 class="font-italic font-weight-bold">Skill</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Skill</h1>
           <h4 class="colum-title-ja">スキル</h4>
           <v-row cols="12">
             <v-col class="text-center skill-content" cols="6">
@@ -97,7 +99,7 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <v-card id="works" class="work">
-          <h1 class="font-italic font-weight-bold">Works</h1>
+          <h1 class="colum-title font-italic font-weight-bold">Works</h1>
           <h4 class="colum-title-ja">製作物</h4>
           <v-row cols="12">
             <v-col class="skill-content" cols="6">
@@ -204,6 +206,10 @@ export default {
 };
 </script>
 <style scoped>
+.page-title {
+  font-family: "Kaushan-Script", cursive;
+}
+
 .image-container {
   position: relative;
 }
@@ -225,6 +231,10 @@ export default {
 .work {
   padding-top: 1%;
   padding-bottom: 2%;
+}
+
+.colum-title {
+  font-family: "Kaushan-Script", cursive;
 }
 
 .colum-title-ja {
