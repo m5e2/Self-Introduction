@@ -179,7 +179,12 @@ export default {
         { name: "bulma" },
         { name: "SpringBoot" },
       ],
-      db: [{ name: "MySQL" }, { name: "PostgreSQL" }, { name: "Oracle" }],
+      db: [
+        { name: "MySQL" },
+        { name: "PostgreSQL" },
+        { name: "H2 Database" },
+        { name: "Oracle" },
+      ],
       others: [
         { name: "Eclipse" },
         { name: "VSCode" },
