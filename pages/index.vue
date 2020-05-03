@@ -25,20 +25,20 @@
             現在の仕事内容
           </h4>
           <v-row cols="12">
-            <v-col cols="4">
+            <v-col cols="6">
               <h3 class="content-para">要件定義 ～ 詳細設計</h3>
               <p>
                 新規機能の追加や仕様変更の要件を任されたときには要件の洗い出しを行ったり、どの実装方法であれば要件を満たせるかを考えて仕様検討案の作成を行ったりしています。
               </p>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="6">
               <h3 class="content-para">コーディング</h3>
               <p>
                 主に Vue.js や Typescript , jQuery を使って実装を行っています。
               </p>
               <p>テストは jest を用いて行っています。</p>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="6">
               <h3 class="content-para">結合テスト</h3>
               <p>
                 リリース 1
@@ -56,7 +56,7 @@
           <h1 class="font-italic font-weight-bold">Skill</h1>
           <h4 class="colum-title-ja">スキル</h4>
           <v-row cols="12">
-            <v-col class="text-center skill-content" cols="4">
+            <v-col class="text-center skill-content" cols="6">
               <p class="text-center headline">{{ COLUM_LANG_TITLE }}</p>
               <p />
               <v-list shaped>
@@ -65,7 +65,7 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col class="text-center skill-content" cols="4">
+            <v-col class="text-center skill-content" cols="6">
               <p class="text-center headline">{{ COLUM_FW_LIB_TITLE }}</p>
               <p />
               <v-list shaped>
@@ -74,7 +74,7 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col class="text-center skill-content" cols="4">
+            <v-col class="text-center skill-content" cols="6">
               <p class="text-center headline">{{ COLUM_TOOL_TITLE }}</p>
               <p />
               <v-list shaped>
@@ -83,7 +83,7 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col class="text-center skill-content" cols="4">
+            <v-col class="text-center skill-content" cols="6">
               <p class="text-center headline">{{ COLUM_DB_TITLE }}</p>
               <p />
               <v-list shaped>
@@ -100,14 +100,14 @@
           <h1 class="font-italic font-weight-bold">Works</h1>
           <h4 class="colum-title-ja">製作物</h4>
           <v-row cols="12">
-            <v-col class="skill-content" cols="4">
+            <v-col class="skill-content" cols="6">
               <v-list-item-content>
                 <h3>ポートフォリオ</h3>
                 <v-card-subtitle>Nuxt.js, Node.js, Vuetify.js</v-card-subtitle>
                 <a href="https://github.com/m5e2/Self-Introduction">Github</a>
               </v-list-item-content>
             </v-col>
-            <v-col class="skill-content" cols="4">
+            <v-col class="skill-content" cols="6">
               <v-list-item-content>
                 <h3>イベント時出席者登録アプリ</h3>
                 <v-card-subtitle
@@ -118,7 +118,7 @@
                 >
               </v-list-item-content>
             </v-col>
-            <v-col class="skill-content" cols="4">
+            <v-col class="skill-content" cols="6">
               <v-list-item-content>
                 <h3>ルーレット</h3>
                 <v-card-subtitle>jQuery</v-card-subtitle>
@@ -127,7 +127,7 @@
                 >
               </v-list-item-content>
             </v-col>
-            <v-col class="skill-content" cols="4">
+            <v-col class="skill-content" cols="6">
               <v-list-item-content>
                 <h3>定期外交通費申請アプリ</h3>
                 <h3>( 製作途中 )</h3>
@@ -234,8 +234,8 @@ export default {
   border: thick double;
 }
 
-.col-4 {
-  max-width: 32%;
+.col-6 {
+  max-width: 48%;
 }
 
 .row {
