@@ -6,17 +6,16 @@
 ## Build Setup
 
 ```bash
-# install dependencies
+# モジュールのインストール
 $ npm install
 
-# serve with hot reload at localhost:3000
+# 開発環境起動時(port は 3000 です)
 $ npm run dev
 
-# build for production and launch server
+# ビルド時
 $ npm run build
-$ npm run start
 
-# generate static project
+# 静的ファイル作成時
 $ npm run generate
 ```
 
