@@ -3,10 +3,10 @@
     <v-row>
       <div class="image-container display-2">
         <img class="image" src="../images/top-image.jpg" />
-        <p class="page-title font-italic font-weight-bold">m5e2's Portfolio</p>
+        <p class="page-title font-italic font-weight-bold">Portfolio</p>
       </div>
-      <v-col class="text-center">
-        <v-card id="profile" class="profile">
+      <v-col id="profile" class="text-center">
+        <v-card class="profile">
           <h1 class="colum-title font-italic font-weight-bold">Profile</h1>
           <h4 class="colum-title-ja font-italic font-weight-bold">
             自己紹介
@@ -22,8 +22,8 @@
           </div>
         </v-card>
       </v-col>
-      <v-col class="text-center" cols="12">
-        <v-card id="currentWork" class="currentWork">
+      <v-col id="currentWork" class="text-center" cols="12">
+        <v-card class="currentWork">
           <h1 class="colum-title font-italic font-weight-bold">
             Current work content
           </h1>
@@ -60,8 +60,8 @@
           </div>
         </v-card>
       </v-col>
-      <v-col class="text-center" cols="12">
-        <v-card id="skill" class="skill">
+      <v-col id="skill" class="text-center" cols="12">
+        <v-card class="skill">
           <h1 class="colum-title font-italic font-weight-bold">Skill</h1>
           <h4 class="colum-title-ja">スキル</h4>
           <div class="skill-content">
@@ -109,8 +109,8 @@
           </div>
         </v-card>
       </v-col>
-      <v-col class="text-center" cols="12">
-        <v-card id="works" class="work">
+      <v-col class="text-center" cols="12" id="works">
+        <v-card class="work">
           <h1 class="colum-title font-italic font-weight-bold">Works</h1>
           <h4 class="colum-title-ja">製作物</h4>
           <div class="works-content">
@@ -237,14 +237,11 @@ export default {
     },
   },
   created() {
-    if (process.browser) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
+    if (process.browser) window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
-    if (process.browser) {
+    if (process.browser)
       window.removeEventListener("scroll", this.handleScroll);
-    }
   },
 };
 </script>
