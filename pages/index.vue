@@ -3,7 +3,7 @@
     <v-row>
       <div class="image-container display-2">
         <img class="image" src="../images/top-image.jpg" />
-        <p class="page-title font-italic font-weight-bold">Portfolio</p>
+        <p class="page-title font-italic font-weight-bold">m5e2's Portfolio</p>
       </div>
       <v-col class="text-center">
         <v-card id="profile" class="profile">
