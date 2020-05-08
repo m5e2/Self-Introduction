@@ -105,6 +105,7 @@
                   <h3>ポートフォリオ</h3>
                   <v-card-subtitle>Nuxt.js, Node.js, Vuetify.js</v-card-subtitle>
                   <a href="https://github.com/m5e2/Self-Introduction">Github</a>
+                  <a href="https://m5e2.github.io/Self-Introduction/">Github Pages</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
@@ -119,13 +120,23 @@
                   <h3>ルーレット</h3>
                   <v-card-subtitle>jQuery</v-card-subtitle>
                   <a href="https://github.com/m5e/Practice-Roulette-Machine">Github</a>
+                  <a
+                    href="https://m5e.github.io/Practice-Roulette-Machine/roulette.html"
+                  >Github Pages</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
                 <v-list-item-content>
-                  <h3>スクレイピングを使ってブラウザからログイン</h3>
+                  <h3>Webスクレイピングを使って指定サイトのキャプチャを取得</h3>
                   <v-card-subtitle>Node.js, Puppeteer</v-card-subtitle>
                   <a href="https://github.com/m5e/login_site">Github</a>
+                </v-list-item-content>
+              </v-col>
+              <v-col class="content-style" cols="6">
+                <v-list-item-content>
+                  <h3>Webスクレイピングを使って工数を入力</h3>
+                  <v-card-subtitle>Node.js, Puppeteer</v-card-subtitle>
+                  <a href="https://github.com/m5e/tact_input_app">Github</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
@@ -134,6 +145,7 @@
                   <h3>( 製作途中 )</h3>
                   <v-card-subtitle>Nuxt.js, Node.js, bulma</v-card-subtitle>
                   <a href="https://github.com/m5e/transportation-expenses">Github</a>
+                  <a href="https://m5e.github.io/transportation-expenses/">Github Pages</a>
                 </v-list-item-content>
               </v-col>
             </v-row>
