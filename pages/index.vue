@@ -26,7 +26,8 @@
             <v-row cols="12">
               <v-col cols="6">
                 <h3 class="content-para">要件定義 ～ 詳細設計</h3>
-                <p>新規機能の追加や仕様変更の要件を任されたときには要件の洗い出しを行ったり、どの実装方法であれば要件を満たせるかを考えて仕様検討案の作成を行ったりしています。</p>
+                <p>新規機能や追加機能の実装時には、自発的に作成した仕様検討案をもとにプロパーや有識者とレビューを行い、認識の差異による手戻りが発生しないようにしています。</p>
+                <p>また、機能改善や不具合対応時には、ただ仕様通りの挙動をするように修正するだけでなく、ユースケースや他機能への影響を踏まえてどのような実装が望ましいかを考え、プロパーや有識者に提案しつつ仕事を進めています。</p>
               </v-col>
               <v-col cols="6">
                 <h3 class="content-para">コーディング</h3>
@@ -148,6 +149,23 @@
                   <a href="https://m5e.github.io/transportation-expenses/">Github Pages</a>
                 </v-list-item-content>
               </v-col>
+              <v-col class="content-style" cols="6">
+                <v-list-item-content>
+                  <h3>15パズル</h3>
+                  <v-card-subtitle>Vue.js, Node.js</v-card-subtitle>
+                  <a href="https://github.com/m5e/vue-animation">Github</a>
+                  <a href="https://m5e.github.io/vue-animation/">Github Pages</a>
+                </v-list-item-content>
+              </v-col>
+              <v-col class="content-style" cols="6">
+                <v-list-item-content>
+                  <h3>Todoリスト</h3>
+                  <h3>( 製作途中 )</h3>
+                  <v-card-subtitle>Vue.js, Typescript, Node.js</v-card-subtitle>
+                  <a href="https://github.com/m5e/vue_ts_todo">Github</a>
+                  <a href="https://m5e.github.io/vue_ts_todo/">Github Pages</a>
+                </v-list-item-content>
+              </v-col>
             </v-row>
           </div>
         </v-card>
@@ -178,18 +196,23 @@ export default {
         { name: "HTML" },
         { name: "CSS ( CSS, Less )" },
         { name: "Javascript" },
+        { name: "Typescript" },
         { name: "Java" },
         { name: "bash" }
       ],
       framework_library: [
         { name: "jQuery" },
         { name: "Vue.js" },
-        { name: "Typescript" },
+        { name: "Nuxt.js" },
         { name: "React" },
+        { name: "Node.js" },
         { name: "Bootstrap" },
+        { name: "bootstrap-vue" },
         { name: "Vuetify.js" },
+        { name: "Material-UI" },
         { name: "bulma" },
-        { name: "SpringBoot" }
+        { name: "Spring" },
+        { name: "Puppeteer" }
       ],
       db: [
         { name: "MySQL" },
@@ -200,16 +223,19 @@ export default {
       others: [
         { name: "Eclipse" },
         { name: "VSCode" },
+        { name: "Atom" },
         { name: "git" },
         { name: "Github" },
         { name: "SourceTree" },
         { name: "TortoiseSVN" },
-        { name: "Thymeleaf" },
+        { name: "pgAdmin4" },
+        { name: "SQLDeveloper" },
         { name: "Redmine" },
         { name: "trac" },
         { name: "jenkins" },
         { name: "Apache" },
-        { name: "AWS" }
+        { name: "AWS(EC2)" },
+        { name: "Cygwin" }
       ]
     };
   },
