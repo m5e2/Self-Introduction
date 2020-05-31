@@ -105,24 +105,25 @@
                 <v-list-item-content>
                   <h3>ポートフォリオ</h3>
                   <v-card-subtitle>Nuxt.js, Node.js, Vuetify.js</v-card-subtitle>
-                  <a href="https://github.com/m5e2/Self-Introduction">Github</a>
-                  <a href="https://m5e2.github.io/Self-Introduction/">Github Pages</a>
+                  <a href="https://github.com/m5e2/Self-Introduction" target="_blank">Github</a>
+                  <a href="https://m5e2.github.io/Self-Introduction/" target="_blank">Github Pages</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
                 <v-list-item-content>
                   <h3>イベント時出席者登録アプリ</h3>
                   <v-card-subtitle>Java, Gradle, Thymeleaf, nginx, H2DB</v-card-subtitle>
-                  <a href="https://github.com/m5e/Acceptance-confirmation">Github</a>
+                  <a href="https://github.com/m5e/Acceptance-confirmation" target="_blank">Github</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
                 <v-list-item-content>
                   <h3>ルーレット</h3>
                   <v-card-subtitle>jQuery</v-card-subtitle>
-                  <a href="https://github.com/m5e/Practice-Roulette-Machine">Github</a>
+                  <a href="https://github.com/m5e/Practice-Roulette-Machine" target="_blank">Github</a>
                   <a
                     href="https://m5e.github.io/Practice-Roulette-Machine/roulette.html"
+                    target="_blank"
                   >Github Pages</a>
                 </v-list-item-content>
               </v-col>
@@ -130,14 +131,14 @@
                 <v-list-item-content>
                   <h3>Webスクレイピングを使って指定サイトのキャプチャを取得</h3>
                   <v-card-subtitle>Node.js, Puppeteer</v-card-subtitle>
-                  <a href="https://github.com/m5e/login_site">Github</a>
+                  <a href="https://github.com/m5e/login_site" target="_blank">Github</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
                 <v-list-item-content>
                   <h3>Webスクレイピングを使って工数を入力</h3>
                   <v-card-subtitle>Node.js, Puppeteer</v-card-subtitle>
-                  <a href="https://github.com/m5e/tact_input_app">Github</a>
+                  <a href="https://github.com/m5e/tact_input_app" target="_blank">Github</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
@@ -145,16 +146,19 @@
                   <h3>定期外交通費申請アプリ</h3>
                   <h3>( 製作途中 )</h3>
                   <v-card-subtitle>Nuxt.js, Node.js, bulma</v-card-subtitle>
-                  <a href="https://github.com/m5e/transportation-expenses">Github</a>
-                  <a href="https://m5e.github.io/transportation-expenses/">Github Pages</a>
+                  <a href="https://github.com/m5e/transportation-expenses" target="_blank">Github</a>
+                  <a
+                    href="https://m5e.github.io/transportation-expenses/"
+                    target="_blank"
+                  >Github Pages</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
                 <v-list-item-content>
                   <h3>15パズル</h3>
                   <v-card-subtitle>Vue.js, Node.js</v-card-subtitle>
-                  <a href="https://github.com/m5e/vue-animation">Github</a>
-                  <a href="https://m5e.github.io/vue-animation/">Github Pages</a>
+                  <a href="https://github.com/m5e/vue-animation" target="_blank">Github</a>
+                  <a href="https://m5e.github.io/vue-animation/" target="_blank">Github Pages</a>
                 </v-list-item-content>
               </v-col>
               <v-col class="content-style" cols="6">
@@ -162,8 +166,8 @@
                   <h3>Todoリスト</h3>
                   <h3>( 製作途中 )</h3>
                   <v-card-subtitle>Vue.js, Typescript, Node.js</v-card-subtitle>
-                  <a href="https://github.com/m5e/vue_ts_todo">Github</a>
-                  <a href="https://m5e.github.io/vue_ts_todo/">Github Pages</a>
+                  <a href="https://github.com/m5e/vue_ts_todo" target="_blank">Github</a>
+                  <a href="https://m5e.github.io/vue_ts_todo/" target="_blank">Github Pages</a>
                 </v-list-item-content>
               </v-col>
             </v-row>
